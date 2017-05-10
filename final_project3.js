@@ -1,16 +1,8 @@
 var namespace = "http://www.w3.org/2000/svg"
 
-makeImage("http://cdn2.autoexpress.co.uk/sites/autoexpressuk/files/styles/gallery_adv/public/6/21//14_mazda_mx-5_super20_2010.jpg?itok=iEDzoaEq",0,0,90,90)
-makeImage("http://extreme-modified.com/wp-content/uploads/2013/08/subaru-car-1114x600.jpg",100,0,90,90)
-makeImage("http://www.newdriverni.com/wp-content/uploads/2015/10/Modified-Car.jpg",0,70,90,90)
-makeImage("https://www.fitmycar.com/journal/wp-content/uploads/2015/12/Top-Ten-Import-Tuner-Cars.jpg",100,70,90,90)
-makeImage("http://www.haltech.com/wp-content/uploads/2015/09/article_jem2.jpg",0,140,90,90)
-makeImage("http://www.harlow-jap-autos.co.uk/RBR34GTR006.JPG",100,140,90,90)
-makeImage("https://i.ytimg.com/vi/p4fY0JozL9M/maxresdefault.jpg",0,210,90,90)
-makeImage("http://www.autospies.com/images/users/DabbyMr/main/Toyota%20FT1%20front%20left%20side_HD.jpg",100,210,90,90)
-makeImage("http://www.greddy.com/upload/img/17020XXX_Z33_a.jpg",0,280,90,90)
-makeImage("https://www.lamborghini.com/en-en/sites/en-en/files/DAM/lamborghini/model/aventador/aventador-sv/slider/aventador-sv.jpg",100,273,100,100)
-
+makeImage("https://img.clipartfest.com/22942e98f2ca19cd386ae905c2d2e339_decorative-lines-large-free-elegant-line-clip-art_600-600.png",0,-5,60,60)
+makeText("Car Gurus", 72, 27,15 , "Lobster", "Black", 1)
+makeImage("https://img.clipartfest.com/22942e98f2ca19cd386ae905c2d2e339_decorative-lines-large-free-elegant-line-clip-art_600-600.png",140,-5,60,60)
 
 //extreme-modified.com/wp-content/uploads/2013/08/subaru-car-1114x600.jpg
 // DO NOT EDIT CODE BELOW THIS LINE!
@@ -42,7 +34,7 @@ function getY(shape) {
       return parseFloat(shape.getAttribute("cy"))
     } else if (shape.hasAttribute("y1")) {
       return parseFloat(shape.getAttribute("y1"))
-    }
+    }20
   } catch (err) {
     throw "You're trying to get the y coordinate of something that isn't a shape!"
   }
@@ -120,7 +112,7 @@ function makeCircle(cx, cy, r, fill, opacity) {
   circle.setAttribute("fill", fill)
   circle.setAttribute("opacity", opacity)
 
-  var canvas = document.getElementById("canvas2")
+  var canvas = document.getElementById("canvas")
   canvas.appendChild(circle)
   return circle
 }
@@ -134,7 +126,7 @@ function makeRect(x, y, width, height, fill, opacity) {
   rect.setAttribute("fill", fill)
   rect.setAttribute("opacity", opacity)
 
-  var canvas = document.getElementById("canvas2")
+  var canvas = document.getElementById("canvas")
   canvas.appendChild(rect)
   return rect
 }
@@ -148,7 +140,7 @@ function makeEllipse(cx, cy, rx, ry, fill, opacity) {
   ellipse.setAttribute("fill", fill)
   ellipse.setAttribute("opacity", opacity)
 
-  var canvas = document.getElementById("canvas2")
+  var canvas = document.getElementById("canvas")
   canvas.appendChild(ellipse)
   return ellipse
 }
@@ -163,7 +155,7 @@ function makeLine(x1, y1, x2, y2, stroke, strokeWidth, opacity) {
   line.setAttribute("stroke-width", strokeWidth)
   line.setAttribute("opacity", opacity)
 
-  var canvas = document.getElementById("canvas2")
+  var canvas = document.getElementById("canvas")
   canvas.appendChild(line)
   return line
 }
@@ -176,7 +168,7 @@ function makePolyline(points, stroke, strokeWidth, opacity) {
   polyline.setAttribute("opacity", opacity)
   polyline.setAttribute("fill", "none")
 
-  var canvas = document.getElementById("canvas2")
+  var canvas = document.getElementById("canvas")
   canvas.appendChild(polyline)
   return polyline
 }
@@ -187,7 +179,7 @@ function makePolygon(points, fill, opacity) {
   polygon.setAttribute("opacity", opacity)
   polygon.setAttribute("fill", fill)
 
-  var canvas = document.getElementById("canvas2")
+  var canvas = document.getElementById("canvas")
   canvas.appendChild(polygon)
   return polygon
 }
@@ -202,7 +194,7 @@ function makeText(message, x, y, fontSize, fontFamily, fill, opacity) {
   text.setAttribute("fill", fill)
   text.setAttribute("opacity", opacity)
 
-  var canvas = document.getElementById("canvas2")
+  var canvas = document.getElementById("canvas")
   canvas.appendChild(text)
   return text
 }
@@ -216,7 +208,7 @@ function makeImage(url, x, y, width, height, opacity) {
   image.setAttribute("height", height)
   image.setAttribute("opacity", opacity)
 
-  var canvas = document.getElementById("canvas2")
+  var canvas = document.getElementById("canvas")
   canvas.appendChild(image)
   return image
 }

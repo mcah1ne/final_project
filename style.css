@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+@import url('https://fonts.googleapis.com/css?family=Timmana');
+h1{
+  text-align: center;
+  font-family: lobster;
+}
+
+a{
+  color: red;
+  font-family: Timmana;
+}
+
+p{
+  font-family: Timmana;
+  text-align: center;
+}
+
+h2{
+  text-align: center;
+  font-family: lobster;
+}
+
+input{
+  display: inline;
+
+}
+
+#inputs {
+  width: 100%;
+  text-align: center;
+}
+
+#inputs2 {
+  width: 100%;
+  text-align: center;
+}
+
+iframe{
+  display: inline;
+}
+
+#video {
+  width:100%;
+  align-items: center;
+}
